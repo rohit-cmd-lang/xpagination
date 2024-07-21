@@ -69,7 +69,9 @@ const App = () => {
         <button onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}>
           Previous
         </button>
-        <div className="button-center">{currentPage}</div>
+        <div className="button-center">
+          <p>{currentPage}</p>
+        </div>
         <button
           onClick={() =>
             setCurrentPage((prev) => Math.min(prev + 1, pageNumbers))
