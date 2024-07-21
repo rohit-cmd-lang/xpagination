@@ -28,6 +28,12 @@ thead {
   text-align: left;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   background-color: #009879;
   border: none;
@@ -41,5 +47,10 @@ button {
 
 .button-center {
   padding: 1rem 1.5rem;
-  cursor: auto;
+  background-color: #009879;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  margin: 0 20px;
 }
