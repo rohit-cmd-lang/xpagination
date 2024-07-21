@@ -25,6 +25,7 @@ td:nth-child(odd) {
 thead {
   background-color: #009879;
   color: white;
+  text-align: left;
 }
 
 button {
