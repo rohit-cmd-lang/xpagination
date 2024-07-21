@@ -11,13 +11,21 @@ const App = () => {
   const currentItems = employees.slice(indexOfFirstItem, indexOfLastItem);
 
   const renderTableData = () => {
-    return currentItems.map((item, idx) => {
+    return currentItems.map((item) => {
       return (
-        <tr key={idx}>
-          <td>{item.id}</td>
-          <td>{item.name}</td>
-          <td>{item.email}</td>
-          <td>{item.role}</td>
+        <tr key={item.id}>
+          <td>
+            <p>{item.id}</p>
+          </td>
+          <td>
+            <p>{item.name}</p>
+          </td>
+          <td>
+            <p>{item.email}</p>
+          </td>
+          <td>
+            <p>{item.role}</p>
+          </td>
         </tr>
       );
     });
