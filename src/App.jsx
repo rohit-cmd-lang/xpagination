@@ -70,7 +70,7 @@ const App = () => {
           Previous
         </button>
         <div className="button-center">
-          <p>{currentPage}</p>
+          <h4>{currentPage}</h4>
         </div>
         <button
           onClick={() =>
