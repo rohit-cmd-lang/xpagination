@@ -1,0 +1,44 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 12px;
+  border: none solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+td:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+thead {
+  background-color: #009879;
+  color: white;
+}
+
+button {
+  background-color: #009879;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.button-center {
+  padding: 1rem 1.5rem;
+  cursor: auto;
+}
