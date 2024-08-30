@@ -65,8 +65,11 @@ const App = () => {
         </thead>
         <tbody>{renderTableData()}</tbody>
       </table>
-      <div className="buttons">
-        <button onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}>
+      <div className="button">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          type="button"
+        >
           Previous
         </button>
         <div className="button-center">
@@ -76,6 +79,7 @@ const App = () => {
           onClick={() =>
             setCurrentPage((prev) => Math.min(prev + 1, pageNumbers))
           }
+          type="button"
         >
           Next
         </button>
