@@ -50,7 +50,13 @@ const App = () => {
   useEffect(() => {
     fetchEmployees();
   }, []);
-
+  const handleNextPage = () => {
+    setCurrentPage((prev) => {
+      const newPage = Math.min(prev + 1, pageNumbers);
+      console.log("current page", newPage); // Correctly logs the updated value
+      return newPage;
+    });
+  };
   return (
     <div className="app-container">
       <h1>Employee Data Table</h1>
@@ -74,9 +80,9 @@ const App = () => {
         </button>
         <span className="button-center">{currentPage}</span>
         <button
-          onClick={() =>
-            setCurrentPage((prev) => Math.min(prev + 1, pageNumbers))
-          }
+          onClick={() => {
+            handleNextPage();
+          }}
           type="button"
         >
           Next
