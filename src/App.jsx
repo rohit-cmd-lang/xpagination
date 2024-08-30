@@ -72,9 +72,7 @@ const App = () => {
         >
           Previous
         </button>
-        <span className="button-center">
-          {currentPage === 2 ? 2 : currentPage}
-        </span>
+        <span className="button-center">{currentPage}</span>
         <button
           onClick={() =>
             setCurrentPage((prev) => Math.min(prev + 1, pageNumbers))
