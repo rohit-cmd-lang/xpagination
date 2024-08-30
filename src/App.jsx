@@ -73,7 +73,7 @@ const App = () => {
           Previous
         </button>
         <div className="button-center">
-          <h4>{currentPage}</h4>
+          <h4>{String(currentPage)}</h4>
         </div>
         <button
           onClick={() =>
